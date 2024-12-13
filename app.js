@@ -25,6 +25,11 @@ button.addEventListener("click", () => {
         tasks.removeChild(li)
     }
 
+    //toggle complete
+    li.onclick = () => {
+        li.classList.toggle("completed");
+    }
+
     //append the button to the li
     li.appendChild(deletButton);
 
